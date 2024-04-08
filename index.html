@@ -3,9 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <main>
+        <div class="container d-flex">
+            <div class="wrapper">
+                <h1>Timer</h1>
+                <div class="timer">
+                    <form id="timerForm">
+                        <label>
+                            <span>Enter timer in seconds</span>
+                            <input id="timerCount" type="number" placeholder="sec">
+                        </label>
+                        <div class="buttons">
+                            <button type="button" id="startBtn" class="btn btn-1">Start</button>
+                            <button type="button" id="pauseBtn" class="btn btn-2">Pause</button>
+                            <button type="button" id="resumeBtn" class="btn btn-3" style="display: none;">Resume</button>
+                            <button type="button" id="clearBtn" class="btn btn-4" style="display: none;">Clear</button>
+                        </div>
+                    </form>
+                    <p>Timer result: <span id="result">0 s</span></p>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
